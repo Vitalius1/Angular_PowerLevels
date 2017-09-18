@@ -1,6 +1,9 @@
 <div id="human">
   <fieldset>
     <legend>Human</legend>
-    Power Level: {{ myLevel }}
+    <p>Power Level: {{ myLevel }}</p>
+    <h4 *ngIf="myLevel > 9000 && myLevel <= 20000">Over 9000!</h4>
+    <h4 *ngIf="myLevel > 20000 && myLevel < 50000">Superlative!</h4>
+    <h4 *ngIf="myLevel >= 50000">The One!</h4>
   </fieldset>
 </div>

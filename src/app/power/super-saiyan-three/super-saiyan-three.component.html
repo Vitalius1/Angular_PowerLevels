@@ -1,6 +1,9 @@
 <div id="super-saiyan-three">
     <fieldset>
       <legend>Super Saiyan Three</legend>
-      Power Level: <span *ngIf='myLevel'>{{ myLevel * 250 }}</span>
+      <p>Power Level: <span *ngIf='myLevel'>{{ myLevel * 250 }}</span></p>
+      <h4 *ngIf="myLevel * 250 > 9000 && myLevel * 250 <= 20000">Over 9000!</h4>
+      <h4 *ngIf="myLevel * 250 > 20000 && myLevel * 250 < 50000">Superlative!</h4>
+      <h4 *ngIf="myLevel * 250 >= 50000">The One!</h4>
     </fieldset>
   </div>

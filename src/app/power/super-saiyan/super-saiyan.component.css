@@ -1,8 +1,9 @@
 #super-saiyan{
     display: inline-block;
     width: 33%;
+    vertical-align: top;
 }
 fieldset{
-    height: 80px;
+    height: 100px;
     background: #FFF9E7;
 }
