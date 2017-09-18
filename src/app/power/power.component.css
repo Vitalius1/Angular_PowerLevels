@@ -2,3 +2,14 @@
     width: 100%;
     height: auto;
 }
+img, form{
+    display: inline-block;
+}
+img{
+    width: 200px;
+    height: auto;
+    margin-left: 350px;
+}
+form{
+    vertical-align: top;
+}

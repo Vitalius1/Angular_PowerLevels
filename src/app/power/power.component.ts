@@ -6,8 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./power.component.css']
 })
 export class PowerComponent implements OnInit {
-
-  constructor() { }
+  image: string;
+  level: number;
+  data: number;
+  onSubmit(){
+    this.level = this.data
+    console.log(this.level);
+  }
+  constructor() { 
+    this.image = "/assets/images/saiyan.jpg"
+  }
 
   ngOnInit() {
   }

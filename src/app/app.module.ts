@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'; // <-- Import FormsModule
+import { HttpModule } from '@angular/http'; // <-- Import HttpModule
 
 import { AppComponent } from './app.component';
 import { PowerComponent } from './power/power.component';
@@ -22,7 +24,9 @@ import { SuperSaiyanFourComponent } from './power/super-saiyan-four/super-saiyan
     SuperSaiyanFourComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule, // <-- Include module in our AppModules
+		HttpModule // <-- Include module in our AppModules
   ],
   providers: [],
   bootstrap: [AppComponent]
